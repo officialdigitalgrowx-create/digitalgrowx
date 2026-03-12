@@ -1,0 +1,41 @@
+# Handle Next.js routing and assets on cPanel/Apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1. Allow access to folders starting with underscores (like _next)
+  # Some servers block this by default
+  <Directory "_next">
+      Order allow,deny
+      Allow from all
+  </Directory>
+
+  # 2. Redirect to trailing slash (important for Next.js routing)
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteRule ^(.*)$ $1/ [L,R=301]
+
+  # 3. Serve .html files for paths
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME}\.html -f
+  RewriteRule ^(.*)$ $1.html [L]
+
+  # 4. Global 404 handling
+  ErrorDocument 404 /404.html
+</IfModule>
+
+# 5. Fix MIME types for CSS and JS
+<IfModule mod_mime.c>
+  AddType text/css .css
+  AddType application/javascript .js
+  AddType application/wasm .wasm
+  AddType font/woff .woff
+  AddType font/woff2 .woff2
+</IfModule>
+
+# 6. Ensure browsers don't cache index.html too aggressively (optional)
+<FilesMatch "\.(html)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </IfModule>
+</FilesMatch>

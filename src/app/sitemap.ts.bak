@@ -1,0 +1,92 @@
+import { MetadataRoute } from 'next';
+import { services } from '@/data/services';
+import { caseStudies } from '@/data/case-studies';
+import { blogPosts } from '@/data/content';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+    const baseUrl = 'https://www.digitalgrowx.com';
+
+    // Static pages with high priority
+    const staticPages = [
+        {
+            url: `${baseUrl}`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 1.0,
+        },
+        {
+            url: `${baseUrl}/services`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/work`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.9,
+        },
+        {
+            url: `${baseUrl}/about`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/appointment`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/insights`,
+            lastModified: new Date(),
+            changeFrequency: 'weekly' as const,
+            priority: 0.9, // High priority for AI discovery
+        },
+        {
+            url: `${baseUrl}/free-audit`,
+            lastModified: new Date(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.8,
+        },
+        {
+            url: `${baseUrl}/privacy`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly' as const,
+            priority: 0.5,
+        },
+        {
+            url: `${baseUrl}/terms`,
+            lastModified: new Date(),
+            changeFrequency: 'yearly' as const,
+            priority: 0.5,
+        },
+    ];
+
+    // Dynamic Service Pages
+    const servicePages = services.map((service) => ({
+        url: `${baseUrl}/services/${service.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }));
+
+    // Dynamic Case Study Pages
+    const workPages = caseStudies.map((cs) => ({
+        url: `${baseUrl}/work/${cs.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }));
+
+    // Dynamic Blog Posts - High Priority for AI
+    const blogPages = blogPosts.map((post) => ({
+        url: `${baseUrl}/insights/${post.slug}`,
+        lastModified: new Date(post.date),
+        changeFrequency: 'weekly' as const,
+        priority: 0.9,
+    }));
+
+    return [...staticPages, ...servicePages, ...workPages, ...blogPages];
+}

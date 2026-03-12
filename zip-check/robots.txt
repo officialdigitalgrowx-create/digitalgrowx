@@ -1,0 +1,37 @@
+# Default crawlers (Google, Bing)
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+
+# AI-specific crawlers - Explicitly Allow
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Sitemaps
+Sitemap: https://digitalgrowx.com/sitemap.xml
+Sitemap: https://digitalgrowx.com/sitemap-news.xml

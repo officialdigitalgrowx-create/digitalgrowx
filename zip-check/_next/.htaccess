@@ -1,0 +1,46 @@
+# Allow access to all files in _next directory
+<IfModule mod_authz_core.c>
+    Require all granted
+</IfModule>
+
+<IfModule !mod_authz_core.c>
+    Order allow,deny
+    Allow from all
+</IfModule>
+
+# Disable mod_security for this directory
+<IfModule mod_security.c>
+    SecFilterEngine Off
+    SecFilterScanPOST Off
+    SecRuleEngine Off
+</IfModule>
+
+# Disable mod_security2
+<IfModule mod_security2.c>
+    SecRuleEngine Off
+</IfModule>
+
+# Bypass Imunify360 WAF
+SecAction "id:1,phase:1,nolog,pass,ctl:ruleEngine=Off"
+
+# Force proper MIME types
+<IfModule mod_mime.c>
+    AddType application/javascript .js
+    AddType text/css .css
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+    AddType application/json .json
+</IfModule>
+
+# Enable CORS for fonts
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2)$">
+        Header set Access-Control-Allow-Origin "*"
+    </FilesMatch>
+</IfModule>
+
+# Cache static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 1 year"
+</IfModule>
