@@ -70,15 +70,6 @@ export default function Footer() {
                                 display: 'inline-flex', alignItems: 'center', gap: '10px',
                                 textDecoration: 'none', marginBottom: '1.5rem',
                             }}>
-                                <div style={{
-                                    width: '36px', height: '36px',
-                                    background: 'linear-gradient(135deg, #1d4ed8, #7c3aed)',
-                                    borderRadius: '10px',
-                                    display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                    fontSize: '18px',
-                                    boxShadow: '0 4px 16px rgba(29,78,216,0.4)',
-                                    flexShrink: 0,
-                                }}></div>
                                 <span style={{
                                     fontFamily: 'var(--font-display)',
                                     fontWeight: 800,
