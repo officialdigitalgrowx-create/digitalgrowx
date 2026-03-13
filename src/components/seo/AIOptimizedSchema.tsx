@@ -29,14 +29,14 @@ export function ArticleSchemaAI({
         author: {
             '@type': 'Person',
             name: author,
-            url: 'https://www.digitalgrowx.com/about',
+            url: 'https://www.global.digitalgrowx.com/about',
         },
         publisher: {
             '@type': 'Organization',
             name: 'Digital GrowX',
             logo: {
                 '@type': 'ImageObject',
-                url: 'https://www.digitalgrowx.com/images/logo.png',
+                url: 'https://www.global.digitalgrowx.com/images/logo.png',
             },
         },
         datePublished: publishedDate,

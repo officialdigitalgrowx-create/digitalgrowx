@@ -101,7 +101,7 @@ export const pageMeta = {
 //  SECTION 3 · HOMEPAGE HERO
 // ─────────────────────────────────────────────────────────────
 export const heroContent = {
-    badge: '🚀 Ahmedabad\'s AI-First Digital Marketing Agency',
+    badge: 'Ahmedabad\'s AI-First Digital Marketing Agency',
     headline: 'Grow Your Brand.\nAutomate Your Growth.\nDominate Your Market.',
     subheadline: 'Digital GrowX helps businesses across India scale through high-impact digital marketing strategies. From SEO and Google Ads to Lead Generation, Social Media Marketing, and AI-powered campaigns — we build the systems that drive your growth.',
     ctaPrimary: { label: 'Contact Us Now →', href: '/appointment' },
@@ -109,9 +109,9 @@ export const heroContent = {
 
     // Proof points shown below the headline
     proofPoints: [
-        '✓ 350+ Clients Served',
-        '✓ ROI-Focused Campaigns',
-        '✓ No Lock-in Contracts',
+        '350+ Clients Served',
+        'ROI-Focused Campaigns',
+        'No Lock-in Contracts',
     ],
 };
 
@@ -179,17 +179,17 @@ export const clientLogos = [
 // ─────────────────────────────────────────────────────────────
 export const problemSolutions = [
     {
-        icon: '💎',
+        icon: '',
         problem: 'Spending on ads but getting low-quality enquiries?',
         solution: 'We run targeted campaigns that attract real buyers — not window shoppers.',
     },
     {
-        icon: '🔍',
+        icon: '',
         problem: 'Your competitors are ranking on Google, but you\'re invisible?',
         solution: 'Our proven SEO strategies put your business on page 1 — and keep it there.',
     },
     {
-        icon: '⚡',
+        icon: '',
         problem: 'No time to manage leads, follow-ups, and social media?',
         solution: 'We deploy AI-powered automation and CRM systems so your business runs 24/7 — even while you sleep.',
     },
@@ -201,22 +201,22 @@ export const problemSolutions = [
 // ─────────────────────────────────────────────────────────────
 export const whyTrustUs = [
     {
-        icon: '🎯',
+        icon: '',
         title: 'Specialized in Lead Generation',
         desc: 'We focus exclusively on lead generation, giving us a deep understanding of the challenges and opportunities unique to high-intent customer acquisition.',
     },
     {
-        icon: '📊',
+        icon: '',
         title: 'Data-Driven, Proven Results',
         desc: 'Every campaign is optimized for maximum ROI. We track, test, and iterate — so your marketing budget always works harder.',
     },
     {
-        icon: '💡',
+        icon: '',
         title: 'Innovative & Ahead of the Curve',
         desc: 'From AI chatbots to GEO optimization, we continuously adopt the latest technologies to keep your brand ahead of the competition.',
     },
     {
-        icon: '🤝',
+        icon: '',
         title: 'Client-Centric Partnership',
         desc: 'Your success is our success. We build long-term relationships built on transparency, trust, and mutual growth — not just monthly reports.',
     },
@@ -229,25 +229,25 @@ export const whyTrustUs = [
 export const methodology = [
     {
         step: '01',
-        icon: '🔬',
+        icon: '',
         title: 'Discovery & Audit',
         desc: 'We start by understanding your business, auditing your current digital presence, and identifying exactly where leads and revenue are being lost.',
     },
     {
         step: '02',
-        icon: '📐',
+        icon: '',
         title: 'Custom Strategy',
         desc: 'We build a bespoke marketing plan — the right channels, the right message, and the right budget allocation — tailored specifically to your goals.',
     },
     {
         step: '03',
-        icon: '🚀',
+        icon: '',
         title: 'Execution & Campaigns',
         desc: 'We launch and manage your campaigns with precision — SEO, Google Ads, social media, content — with real-time monitoring for maximum performance.',
     },
     {
         step: '04',
-        icon: '📈',
+        icon: '',
         title: 'Optimize & Scale',
         desc: 'We continuously analyze results, double down on what works, and scale your growth systematically every single month.',
     },
@@ -260,7 +260,7 @@ export const methodology = [
 export const services = [
     {
         slug: 'seo',
-        icon: '🔍',
+        icon: '',
         title: 'SEO',
         shortDesc: 'Rank higher on Google and get found by customers who are already searching for what you offer.',
         fullDesc: 'Our SEO service covers full technical audits, on-page optimization, content strategy, and high-authority link building. We focus on keywords that drive real business — not just traffic. From startups to established enterprises in Gujarat, we\'ve helped businesses dominate their category on Google.',
@@ -270,7 +270,7 @@ export const services = [
     },
     {
         slug: 'aeo-gpt-ads',
-        icon: '🤖',
+        icon: '',
         title: 'GPT Ads & AI Optimization',
         shortDesc: 'Dominate the next era of search. Optimize your brand for ChatGPT, Claude, and Gemini citations.',
         fullDesc: 'The search landscape is shifting from keywords to conversations. We optimize your brand to be the primary citation in AI-generated answers, ensuring you win the first-mover advantage in GPT-driven advertising and LLM-based discovery.',
@@ -280,7 +280,7 @@ export const services = [
     },
     {
         slug: 'local-seo',
-        icon: '📍',
+        icon: '',
         title: 'Local SEO',
         shortDesc: 'Get discovered by customers near you. Dominate Google Maps and local search results in Ahmedabad and beyond.',
         fullDesc: 'Local SEO is essential for any business serving a specific city or region. We optimize your Google Business Profile, build local citations, manage reviews, and ensure you appear in the Local Pack for high-intent searches like "digital marketing agency near me" or "SEO agency Ahmedabad."',
@@ -290,7 +290,7 @@ export const services = [
     },
     {
         slug: 'google-ads',
-        icon: '📢',
+        icon: '',
         title: 'Google Ads',
         shortDesc: 'Get instant, targeted traffic from buyers actively searching for your services — with maximum ROI.',
         fullDesc: 'We design, launch, and manage Google Search, Display, and Shopping campaigns built around your conversion goals — not just clicks. Every rupee of your ad budget is tracked, optimized, and accountable.',
@@ -300,7 +300,7 @@ export const services = [
     },
     {
         slug: 'social-media',
-        icon: '📱',
+        icon: '',
         title: 'Social Media Marketing',
         shortDesc: 'Build a loyal community, increase brand awareness, and drive leads through powerful social media campaigns.',
         fullDesc: 'From Facebook and Instagram to LinkedIn, we create and manage content strategies, paid social campaigns, and community engagement that turns followers into customers. We handle everything — content creation, scheduling, ads, and analytics.',
@@ -310,7 +310,7 @@ export const services = [
     },
     {
         slug: 'performance-marketing',
-        icon: '🎯',
+        icon: '',
         title: 'Performance Marketing',
         shortDesc: 'Every campaign tied to measurable outcomes — leads, sales, bookings. You pay for results.',
         fullDesc: 'Performance marketing means accountability at every step. We build complete funnels — from ad creative and landing pages to lead capture and follow-up automation — ensuring the highest possible conversion rate across Google, Meta, and display networks.',
@@ -320,7 +320,7 @@ export const services = [
     },
     {
         slug: 'lead-generation',
-        icon: '💼',
+        icon: '',
         title: 'Lead Generation',
         shortDesc: 'Stop chasing clients. Build a system that brings qualified buyers to you — consistently, every month.',
         fullDesc: 'Lead generation is the core of everything we do at Digital GrowX. We combine SEO, paid ads, social media, content marketing, and WhatsApp automation to build a continuous pipeline of quality prospects who are ready to buy.',
@@ -330,7 +330,7 @@ export const services = [
     },
     {
         slug: 'brand-awareness',
-        icon: '✨',
+        icon: '',
         title: 'Brand Awareness',
         shortDesc: 'Establish your brand as the authority in your industry — online and offline.',
         fullDesc: 'Brand awareness campaigns build the trust and recognition needed to convert prospects into loyal clients. We use content marketing, PR, social media, and targeted display ads to make your brand unforgettable in your niche.',
@@ -340,7 +340,7 @@ export const services = [
     },
     {
         slug: 're-marketing',
-        icon: '🔄',
+        icon: '',
         title: 'Re-Marketing',
         shortDesc: 'Re-engage visitors who showed interest but didn\'t convert — and turn them into paying clients.',
         fullDesc: 'Most visitors don\'t buy on their first visit. Our re-marketing campaigns keep your brand top-of-mind with warm audiences across Google Display, YouTube, and social platforms — dramatically improving conversion rates and reducing your cost per acquisition.',
@@ -360,9 +360,9 @@ export const gptSpotlight = {
     headline: 'We Are Ready for GPT Ads. Are You?',
     body: 'The next era of search isn’t just links — it’s AI-generated answers. We optimize your brand to be the primary citation in ChatGPT, Claude, and Gemini searches, ensuring you win the first-mover advantage in GPT-driven advertising.',
     features: [
-        { icon: '🤖', title: 'GEO Experts', desc: 'Generative Engine Optimization built into every campaign' },
-        { icon: '📈', title: 'AI Training Sets', desc: 'Citations within top-tier LLM datasets' },
-        { icon: '💎', title: 'Early Access', desc: 'Exclusive beta access to new LLM ad formats' },
+        { icon: '', title: 'GEO Experts', desc: 'Generative Engine Optimization built into every campaign' },
+        { icon: '', title: 'AI Training Sets', desc: 'Citations within top-tier LLM datasets' },
+        { icon: '', title: 'Early Access', desc: 'Exclusive beta access to new LLM ad formats' },
     ],
     cta: { label: 'Audit My GPT Presence', href: '/services' },
 };
@@ -379,9 +379,9 @@ export const aiShowcase = {
     ctaHref: '/services',
 
     capabilities: [
-        { icon: '💬', title: 'AI Chatbots', desc: 'Handle enquiries instantly, qualify leads 24/7 without any manual effort' },
-        { icon: '⚙️', title: 'WhatsApp Automation', desc: 'Auto-send follow-ups, catalogues, and appointment confirmations via WhatsApp' },
-        { icon: '📊', title: 'Lead Scoring', desc: 'AI ranks your leads by quality — so your team only calls serious buyers' },
+        { icon: '', title: 'AI Chatbots', desc: 'Handle enquiries instantly, qualify leads 24/7 without any manual effort' },
+        { icon: '', title: 'WhatsApp Automation', desc: 'Auto-send follow-ups, catalogues, and appointment confirmations via WhatsApp' },
+        { icon: '', title: 'Lead Scoring', desc: 'AI ranks your leads by quality — so your team only calls serious buyers' },
     ],
 
     terminalLines: [
@@ -550,7 +550,7 @@ export const teamMembers = [
         experience: '(Doctorate in Business Strategy)',
         bio: 'With 25 years of hands-on experience across traditional and digital marketing, Daxesh brings an unparalleled depth of industry knowledge to Digital GrowX. He has helped hundreds of businesses in Gujarat craft winning growth strategies — from brand positioning to large-scale lead generation campaigns.',
         specialties: ['Business Strategy', 'Brand Development', 'B2B Marketing', 'Client Relations'],
-        photo: '/images/team/daxesh.png',
+        photo: '/images/team/daxesh.webp',
     },
     {
         name: 'Shailesh Panchal',
@@ -558,7 +558,7 @@ export const teamMembers = [
         experience: '9+ Years in Digital Marketing',
         bio: 'Shailesh is the technical force behind Digital GrowX\'s digital campaigns. With over 9 years of expertise in SEO, Google Ads, social media, and performance marketing, he has managed campaigns for clients across real estate, education, healthcare, and manufacturing — consistently delivering measurable results.',
         specialties: ['SEO & SEM', 'Google Ads', 'Social Media Campaigns', 'Performance Marketing', 'Analytics'],
-        photo: '/images/team/sailsh.png',
+        photo: '/images/team/sailsh.webp',
     },
 ];
 
@@ -587,22 +587,22 @@ export const aboutContent = {
 // ─────────────────────────────────────────────────────────────
 export const companyValues = [
     {
-        icon: '⚖️',
+        icon: '',
         title: 'Integrity',
         description: 'We operate with complete honesty and transparency. Our clients always know exactly what we\'re doing, why we\'re doing it, and what results to expect.',
     },
     {
-        icon: '💎',
+        icon: '',
         title: 'Excellence',
         description: 'We set a high bar for everything we deliver — from the strategy we design to the campaigns we execute. Good enough is never good enough.',
     },
     {
-        icon: '💡',
+        icon: '',
         title: 'Innovation',
         description: 'We embrace the latest digital tools and AI technologies to keep our clients ahead of the market — not catching up to it.',
     },
     {
-        icon: '🤝',
+        icon: '',
         title: 'Collaboration',
         description: 'We work as a true extension of your team — listening, adapting, and aligning our strategies with your real-world business goals.',
     },
@@ -613,10 +613,10 @@ export const companyValues = [
 //  SECTION 15 · COMPANY STATS  (about + homepage)
 // ─────────────────────────────────────────────────────────────
 export const companyStats = [
-    { value: '350+', label: 'Clients Served', icon: '🚀', detail: 'Across 8+ industries in Gujarat & India' },
-    { value: '25 Yrs', label: 'Combined Expertise', icon: '📈', detail: 'Across traditional and digital marketing' },
-    { value: '9+', label: 'Industries Covered', icon: '💎', detail: 'Real estate, education, manufacturing & more' },
-    { value: '100%', label: 'Transparent Reporting', icon: '💰', detail: 'No hidden fees, no vanity metrics' },
+    { value: '350+', label: 'Clients Served', icon: '', detail: 'Across 8+ industries in Gujarat & India' },
+    { value: '25 Yrs', label: 'Combined Expertise', icon: '', detail: 'Across traditional and digital marketing' },
+    { value: '9+', label: 'Industries Covered', icon: '', detail: 'Real estate, education, manufacturing & more' },
+    { value: '100%', label: 'Transparent Reporting', icon: '', detail: 'No hidden fees, no vanity metrics' },
 ];
 
 
@@ -624,15 +624,15 @@ export const companyStats = [
 //  SECTION 16 · INDUSTRIES SERVED  (services / about page)
 // ─────────────────────────────────────────────────────────────
 export const industries = [
-    { icon: '🏠', name: 'Real Estate', desc: 'HNI lead generation, property campaigns, virtual tour funnels, and automated follow-ups for developers and agents.' },
-    { icon: '🎓', name: 'Education & Schools', desc: 'Student and parent acquisition campaigns, admissions funnels, and school brand building for institutions across Gujarat.' },
-    { icon: '🏭', name: 'Manufacturing & Export', desc: 'B2B lead generation, global digital presence, and technical SEO for manufacturers and industrial suppliers.' },
-    { icon: '🏥', name: 'Healthcare & Clinics', desc: 'Patient acquisition, local SEO, Google Maps optimization, and reputation management for clinics and wellness centres.' },
-    { icon: '🍽️', name: 'Food & Hospitality', desc: 'Social media growth, Google presence, and local campaigns for restaurants, cafés, and hospitality businesses.' },
-    { icon: '💈', name: 'Beauty & Wellness', desc: 'Appointment-driven campaigns, Instagram marketing, and local SEO for salons, spas, and beauty brands.' },
-    { icon: '🎬', name: 'Media & Entertainment', desc: 'Digital presence and visibility strategies for news outlets, film studios, and creative agencies.' },
-    { icon: '🎉', name: 'Events', desc: 'High-impact promotion and digital ticket sales for festivals, foundation events, and corporate meetups.' },
-    { icon: '🪑', name: 'Interior & Furniture', desc: 'Visual storytelling and catalog-driven lead generation for premium interior designers and furniture brands.' },
+    { icon: '', name: 'Real Estate', desc: 'HNI lead generation, property campaigns, virtual tour funnels, and automated follow-ups for developers and agents.' },
+    { icon: '', name: 'Education & Schools', desc: 'Student and parent acquisition campaigns, admissions funnels, and school brand building for institutions across Gujarat.' },
+    { icon: '', name: 'Manufacturing & Export', desc: 'B2B lead generation, global digital presence, and technical SEO for manufacturers and industrial suppliers.' },
+    { icon: '', name: 'Healthcare & Clinics', desc: 'Patient acquisition, local SEO, Google Maps optimization, and reputation management for clinics and wellness centres.' },
+    { icon: '', name: 'Food & Hospitality', desc: 'Social media growth, Google presence, and local campaigns for restaurants, cafés, and hospitality businesses.' },
+    { icon: '', name: 'Beauty & Wellness', desc: 'Appointment-driven campaigns, Instagram marketing, and local SEO for salons, spas, and beauty brands.' },
+    { icon: '', name: 'Media & Entertainment', desc: 'Digital presence and visibility strategies for news outlets, film studios, and creative agencies.' },
+    { icon: '', name: 'Events', desc: 'High-impact promotion and digital ticket sales for festivals, foundation events, and corporate meetups.' },
+    { icon: '', name: 'Interior & Furniture', desc: 'Visual storytelling and catalog-driven lead generation for premium interior designers and furniture brands.' },
 ];
 
 
@@ -795,9 +795,9 @@ export const jsonLdSchema = {
         '@type': 'MarketingAgency',
         name: 'Digital GrowX',
         description: 'Digital GrowX is Ahmedabad\'s leading digital marketing agency specializing in Lead Generation, SEO, Google Ads, Social Media Marketing, and Performance Marketing for businesses across India.',
-        url: 'https://www.digitalgrowx.com',  // TODO: update with real domain
-        logo: 'https://www.digitalgrowx.com/images/logo.png',
-        image: 'https://www.digitalgrowx.com/images/og-home.jpg',
+        url: 'https://www.global.digitalgrowx.com',  // TODO: update with real domain
+        logo: 'https://www.global.digitalgrowx.com/images/logo.png',
+        image: 'https://www.global.digitalgrowx.com/images/og-home.jpg',
         telephone: '+919023419101',
         email: 'info@digitalgrowx.com',
         address: {

@@ -81,10 +81,29 @@ function CaseCard({ cs, featured = false }: { cs: typeof caseStudies[number]; fe
                     boxShadow: `0 4px 16px rgba(0,0,0,0.35), 0 0 0 1px rgba(255,255,255,0.12)`,
                     flexShrink: 0,
                 }}>
-                    {cs.logo && (
+                    {cs.logo ? (
                         <img src={cs.logo} alt={cs.company}
                             style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }}
                         />
+                    ) : (
+                        // Industry-based SVG fallback icons
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            {cs.tag === 'Construction' ? (
+                                <path d="M3 21h18M5 21V7l8-4 8 4v14M9 21v-6h6v6" stroke="#f97316" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            ) : cs.tag === 'Real Estate' ? (
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2zM9 22V12h6v10" stroke="#0070ff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            ) : cs.tag === 'Industrial B2B' ? (
+                                <rect x="2" y="7" width="20" height="14" rx="2" stroke="#7c3aed" strokeWidth="1.5"/>
+                            ) : cs.tag === 'Luxury Interiors' ? (
+                                <path d="M20 9V3H4v6M4 21V9h16v12M9 21v-6h6v6" stroke="#d97706" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            ) : cs.tag === 'Solar Energy' ? (
+                                <circle cx="12" cy="12" r="5" stroke="#16a34a" strokeWidth="1.5"/>
+                            ) : cs.tag === 'Social Media & Ads' ? (
+                                <circle cx="6" cy="12" r="3" stroke="#8b5cf6" strokeWidth="1.5"/>
+                            ) : (
+                                <circle cx="12" cy="12" r="9" stroke="#0ea5e9" strokeWidth="1.5"/>
+                            )}
+                        </svg>
                     )}
                 </div>
 
@@ -295,7 +314,7 @@ export default function WorkPage() {
                             background: 'linear-gradient(135deg, #7c3aed, #4f46e5)', color: '#fff',
                             fontWeight: 700, fontSize: '14px', boxShadow: '0 6px 24px rgba(124,58,237,0.35)',
                         }}>
-                            📋 Get Free Audit →
+                            Get Free Audit →
                         </a>
                         <a href="/appointment" style={{
                             display: 'inline-block', padding: '12px 32px', borderRadius: '99px', textDecoration: 'none',

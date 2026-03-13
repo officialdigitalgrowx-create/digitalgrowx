@@ -6,10 +6,10 @@ export function BreadcrumbSchema() {
     const segments = pathname.split('/').filter(Boolean);
 
     const items = [
-        { name: 'Home', url: 'https://www.digitalgrowx.com' },
+        { name: 'Home', url: 'https://www.global.digitalgrowx.com' },
         ...segments.map((segment, index) => ({
             name: segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' '),
-            url: `https://www.digitalgrowx.com/${segments.slice(0, index + 1).join('/')}`,
+            url: `https://www.global.digitalgrowx.com/${segments.slice(0, index + 1).join('/')}`,
         })),
     ];
 
@@ -38,7 +38,7 @@ export function BreadcrumbSchema() {
                             {index === items.length - 1 ? (
                                 <span className="text-gray-300 font-medium">{item.name}</span>
                             ) : (
-                                <a href={item.url.replace('https://www.digitalgrowx.com', '') || '/'} className="hover:text-primary-300 transition-colors">
+                                <a href={item.url.replace('https://www.global.digitalgrowx.com', '') || '/'} className="hover:text-primary-300 transition-colors">
                                     {item.name}
                                 </a>
                             )}

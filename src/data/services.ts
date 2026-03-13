@@ -41,9 +41,9 @@ export const services: Service[] = [
         deliverables: ['Technical SEO Audit', 'AI Content Strategy', 'Authority Backlinks', 'Weekly Performance Reports'],
         relatedServices: ['local-seo', 'performance-marketing', 'aeo-gpt-ads'],
         benefits: [
-            { title: 'Global Authority', description: 'Be recognized as the leader in your industry across borders.', icon: '🌍' },
-            { title: 'Compound Growth', description: 'SEO value builds over time, creating a massive long-term ROI.', icon: '📈' },
-            { title: 'Intent Capture', description: 'Reach customers at the exact moment they are looking to buy.', icon: '🎯' }
+            { title: 'Global Authority', description: 'Be recognized as the leader in your industry across borders.', icon: '' },
+            { title: 'Compound Growth', description: 'SEO value builds over time, creating a massive long-term ROI.', icon: '' },
+            { title: 'Intent Capture', description: 'Reach customers at the exact moment they are looking to buy.', icon: '' }
         ],
         features: ['Technical SEO Audit', 'AI Content Optimization', 'Authority Building', 'Conversion Rate Optimization'],
         process: [
@@ -69,9 +69,9 @@ export const services: Service[] = [
         deliverables: ['AI Citation Map', 'GEO Schema Implementation', 'LLM Entity Report', 'Voice Search Optimization'],
         relatedServices: ['seo', 'lead-generation', 'performance-marketing'],
         benefits: [
-            { title: 'AI Dominance', description: 'Capture the answer box in ChatGPT and Gemini before your competition.', icon: '🤖' },
-            { title: 'Future-Proof ROI', description: 'Be the first to capitalize on the shift from search to synthesis.', icon: '🧩' },
-            { title: 'Authority Bias', description: 'LLMs naturally recommend brands with the strongest technical citation moat.', icon: '🥇' }
+            { title: 'AI Dominance', description: 'Capture the answer box in ChatGPT and Gemini before your competition.', icon: '' },
+            { title: 'Future-Proof ROI', description: 'Be the first to capitalize on the shift from search to synthesis.', icon: '' },
+            { title: 'Authority Bias', description: 'LLMs naturally recommend brands with the strongest technical citation moat.', icon: '' }
         ],
         features: ['Generative Engine Optimization (GEO)', 'AI Citation Building', 'Voice Search Readiness', 'AI Ad Inventory Access'],
         process: [
@@ -96,9 +96,9 @@ export const services: Service[] = [
         deliverables: ['GMB Optimization', 'Local Citation Sync', 'Review Automation', 'Local Content Map'],
         relatedServices: ['seo', 'performance-marketing', 'lead-generation'],
         benefits: [
-            { title: 'Map Dominance', description: 'Appear in the top 3 of Google Maps for all relevant searches.', icon: '📍' },
-            { title: 'Trust Builder', description: 'Automated review management builds instant credibility.', icon: '⭐' },
-            { title: 'Store Footfall', description: 'Drive physical traffic to your retail or office locations.', icon: '🏢' }
+            { title: 'Map Dominance', description: 'Appear in the top 3 of Google Maps for all relevant searches.', icon: '' },
+            { title: 'Trust Builder', description: 'Automated review management builds instant credibility.', icon: '' },
+            { title: 'Store Footfall', description: 'Drive physical traffic to your retail or office locations.', icon: '' }
         ],
         features: ['GMB Optimization', 'Local Citation Building', 'Review Management', 'Hyper-local Content'],
         process: [
@@ -123,9 +123,9 @@ export const services: Service[] = [
         deliverables: ['Social Strategy', 'High-End Creatives', 'Community Playbook', 'Influencer Map'],
         relatedServices: ['brand-awareness', 'performance-marketing', 'lead-generation'],
         benefits: [
-            { title: 'Viral Reach', description: 'Content engineered to be shared across decision-maker networks.', icon: '🚀' },
-            { title: 'Brand Affinity', description: 'Build a deep emotional connection with your target audience.', icon: '❤️' },
-            { title: 'Market Authority', description: 'Become the "thought leader" that competitors fear.', icon: '👑' }
+            { title: 'Viral Reach', description: 'Content engineered to be shared across decision-maker networks.', icon: '' },
+            { title: 'Brand Affinity', description: 'Build a deep emotional connection with your target audience.', icon: '' },
+            { title: 'Market Authority', description: 'Become the "thought leader" that competitors fear.', icon: '' }
         ],
         features: ['Strategy Development', 'Content Creation', 'Community Management', 'Influencer Collaboration'],
         process: [
@@ -150,9 +150,9 @@ export const services: Service[] = [
         deliverables: ['Campaign Setup', 'Ad Creatives', 'Conversion Landers', 'ROAS Dashboards'],
         relatedServices: ['google-ads', 're-marketing', 'lead-generation'],
         benefits: [
-            { title: 'Instant Scale', description: 'Turn on the growth tap and see leads within 48 hours.', icon: '⚡' },
-            { title: 'Full ROI Tracking', description: 'Know exactly which rupee brought back which client.', icon: '💎' },
-            { title: 'Infinite Loop', description: 'Re-invest winning ad spend into higher volume automatically.', icon: '🔄' }
+            { title: 'Instant Scale', description: 'Turn on the growth tap and see leads within 48 hours.', icon: '' },
+            { title: 'Full ROI Tracking', description: 'Know exactly which rupee brought back which client.', icon: '' },
+            { title: 'Infinite Loop', description: 'Re-invest winning ad spend into higher volume automatically.', icon: '' }
         ],
         features: ['Multi-channel Strategy', 'Creative Testing', 'Conversion Optimization', 'Attribution Modeling'],
         process: [
@@ -177,9 +177,9 @@ export const services: Service[] = [
         deliverables: ['Funnel Architecture', 'Lead Magnets', 'Auto-nurture Emails', 'CRM Integration'],
         relatedServices: ['aeo-gpt-ads', 'performance-marketing', 're-marketing'],
         benefits: [
-            { title: 'Quality Over Quantity', description: 'AI-filtered leads that actually want to buy from you.', icon: '🛡️' },
-            { title: 'Automated Nurture', description: 'Follow up 7+ times automatically without lifting a finger.', icon: '🤖' },
-            { title: 'Predictable Pipe', description: 'Know how many sales meetings you will have next month.', icon: '📅' }
+            { title: 'Quality Over Quantity', description: 'AI-filtered leads that actually want to buy from you.', icon: '' },
+            { title: 'Automated Nurture', description: 'Follow up 7+ times automatically without lifting a finger.', icon: '' },
+            { title: 'Predictable Pipe', description: 'Know how many sales meetings you will have next month.', icon: '' }
         ],
         features: ['Funnel Design', 'Lead Magnets', 'Qualification Workflows', 'CRM Integration'],
         process: [
@@ -204,9 +204,9 @@ export const services: Service[] = [
         deliverables: ['Brand Guidelines', 'Brand Voice Map', 'Visual Assets', 'Naming Strategy'],
         relatedServices: ['social-media', 'seo', 'lead-generation'],
         benefits: [
-            { title: 'Unmatched Presence', description: 'Look 10x larger than your actual size to prospects.', icon: '✨' },
-            { title: 'Price Elasticity', description: 'Charge premium rates because your brand is perceived as elite.', icon: '💸' },
-            { title: 'Talent Magnet', description: 'Attract the best employees who want to work for a winner.', icon: '🧲' }
+            { title: 'Unmatched Presence', description: 'Look 10x larger than your actual size to prospects.', icon: '' },
+            { title: 'Price Elasticity', description: 'Charge premium rates because your brand is perceived as elite.', icon: '' },
+            { title: 'Talent Magnet', description: 'Attract the best employees who want to work for a winner.', icon: '' }
         ],
         features: ['Brand Identity', 'Narrative Strategy', 'Visual Language', 'Positioning'],
         process: [
@@ -231,9 +231,9 @@ export const services: Service[] = [
         deliverables: ['Search Campaign Map', 'Display Creatives', 'Shopping Feeds', 'YouTube Ad Scripts'],
         relatedServices: ['performance-marketing', 're-marketing', 'lead-generation'],
         benefits: [
-            { title: 'Day 1 Traffic', description: 'Start getting qualified visits within hours of launch.', icon: '⚡' },
-            { title: 'Data Goldmine', description: 'Learn exactly what your market is searching for.', icon: '📊' },
-            { title: 'Search Dominance', description: 'Push competitors out of the top fold for key terms.', icon: '🔨' }
+            { title: 'Day 1 Traffic', description: 'Start getting qualified visits within hours of launch.', icon: '' },
+            { title: 'Data Goldmine', description: 'Learn exactly what your market is searching for.', icon: '' },
+            { title: 'Search Dominance', description: 'Push competitors out of the top fold for key terms.', icon: '' }
         ],
         features: ['Search Ads', 'Display Network', 'Shopping Campaigns', 'YouTube Ads'],
         process: [
@@ -258,9 +258,9 @@ export const services: Service[] = [
         deliverables: ['Custom AI Agent Build', 'Workflow Automation Map', 'CRM Integration', 'Performance Dashboard'],
         relatedServices: ['lead-generation', 'seo', 'performance-marketing'],
         benefits: [
-            { title: 'Always On', description: 'AI agents work 24/7/365 with zero fatigue or errors.', icon: '⚡' },
-            { title: 'Cost Slash', description: 'Replace repetitive human tasks and reinvest savings into growth.', icon: '💸' },
-            { title: 'Infinite Scale', description: 'Handle 10x the volume without hiring 10x the staff.', icon: '🚀' }
+            { title: 'Always On', description: 'AI agents work 24/7/365 with zero fatigue or errors.', icon: '' },
+            { title: 'Cost Slash', description: 'Replace repetitive human tasks and reinvest savings into growth.', icon: '' },
+            { title: 'Infinite Scale', description: 'Handle 10x the volume without hiring 10x the staff.', icon: '' }
         ],
         features: ['Custom AI Agent Development', 'n8n / Make Automation', 'LLM API Integration', 'CRM & Slack Sync'],
         process: [
@@ -285,9 +285,9 @@ export const services: Service[] = [
         deliverables: ['UI/UX Design', 'Next.js Development', 'CRO Audit', 'SEO Foundation'],
         relatedServices: ['seo', 'performance-marketing', 'brand-awareness'],
         benefits: [
-            { title: 'Instant Trust', description: 'A premium design forces visitors to take you seriously.', icon: '✨' },
-            { title: 'Conversion Engine', description: 'Every element is engineered to move visitors toward action.', icon: '🎯' },
-            { title: 'Speed as a Feature', description: 'Sub-2s load times to reduce bounce and improve SEO.', icon: '⚡' }
+            { title: 'Instant Trust', description: 'A premium design forces visitors to take you seriously.', icon: '' },
+            { title: 'Conversion Engine', description: 'Every element is engineered to move visitors toward action.', icon: '' },
+            { title: 'Speed as a Feature', description: 'Sub-2s load times to reduce bounce and improve SEO.', icon: '' }
         ],
         features: ['Strategy & Wireframing', 'Premium UI/UX Design', 'Next.js / React Build', 'Conversion Rate Optimisation'],
         process: [
@@ -312,9 +312,9 @@ export const services: Service[] = [
         deliverables: ['Product Scoping', 'Full-Stack Development', 'AI Integration', 'Deployment & Monitoring'],
         relatedServices: ['ai-automation', 'web-design', 'lead-generation'],
         benefits: [
-            { title: 'Built for Scale', description: 'Architecture that supports 1 user or 100,000 — same codebase.', icon: '🏗️' },
-            { title: 'AI-Native', description: 'LLM integrations baked in from day one, not bolted on later.', icon: '🤖' },
-            { title: 'Ship Fast', description: 'Agile sprints with weekly demos so you see progress constantly.', icon: '🚀' }
+            { title: 'Built for Scale', description: 'Architecture that supports 1 user or 100,000 — same codebase.', icon: '' },
+            { title: 'AI-Native', description: 'LLM integrations baked in from day one, not bolted on later.', icon: '' },
+            { title: 'Ship Fast', description: 'Agile sprints with weekly demos so you see progress constantly.', icon: '' }
         ],
         features: ['Full-Stack Development', 'AI / LLM Integration', 'Mobile-Responsive PWA', 'API & CRM Integrations'],
         process: [
@@ -339,9 +339,9 @@ export const services: Service[] = [
         deliverables: ['Audience Segmentation', 'Custom Ad Creatives', 'Cross-Platform Pixels', 'Funnel Re-entry Automation'],
         relatedServices: ['performance-marketing', 'google-ads', 'lead-generation'],
         benefits: [
-            { title: 'Recover Lost Revenue', description: 'Re-engage up to 70% of visitors who did not convert the first time.', icon: '🔄' },
-            { title: 'Lower CPA', description: 'Warm audiences convert at 2–5x the rate of cold traffic, cutting cost per acquisition.', icon: '💸' },
-            { title: 'Omnipresent Brand', description: 'Stay top-of-mind across every platform your prospect visits after leaving your site.', icon: '👁️' }
+            { title: 'Recover Lost Revenue', description: 'Re-engage up to 70% of visitors who did not convert the first time.', icon: '' },
+            { title: 'Lower CPA', description: 'Warm audiences convert at 2–5x the rate of cold traffic, cutting cost per acquisition.', icon: '' },
+            { title: 'Omnipresent Brand', description: 'Stay top-of-mind across every platform your prospect visits after leaving your site.', icon: '' }
         ],
         features: ['Google Display Retargeting', 'Meta Custom Audiences', 'YouTube Remarketing', 'Dynamic Product Ads'],
         process: [

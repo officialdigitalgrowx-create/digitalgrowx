@@ -2,9 +2,9 @@ export const schemaLocalBusiness = {
     "@context": "https://schema.org",
     "@type": ["LocalBusiness", "MarketingAgency", "ProfessionalService"],
     "name": "Digital GrowX",
-    "url": "https://www.digitalgrowx.com",
-    "logo": "https://www.digitalgrowx.com/images/logo.png",
-    "image": "https://www.digitalgrowx.com/images/og-home.jpg",
+    "url": "https://www.global.digitalgrowx.com",
+    "logo": "https://www.global.digitalgrowx.com/images/logo.png",
+    "image": "https://www.global.digitalgrowx.com/images/og-home.jpg",
     "description": "Digital GrowX is Ahmedabad's top-rated digital marketing agency specializing in Lead Generation, SEO, Google Ads, and Performance Marketing.",
     "telephone": "+91 90234 19101",
     "address": {
@@ -36,8 +36,8 @@ export const schemaOrganization = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Digital GrowX",
-    "url": "https://www.digitalgrowx.com",
-    "logo": "https://www.digitalgrowx.com/images/logo.png"
+    "url": "https://www.global.digitalgrowx.com",
+    "logo": "https://www.global.digitalgrowx.com/images/logo.png"
 };
 
 export const schemaFAQ = {

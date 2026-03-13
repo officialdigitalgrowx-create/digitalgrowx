@@ -48,8 +48,8 @@ export default function CareerPage() {
                                         </div>
                                         <p style={{ color: 'rgba(255,255,255,0.4)', fontSize: '0.82rem', lineHeight: 1.65, marginBottom: '0.75rem' }}>{r.desc}</p>
                                         <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
-                                            <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.35)', fontWeight: 600 }}>📅 {r.type}</span>
-                                            <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.35)', fontWeight: 600 }}>⏱ {r.exp} experience</span>
+                                            <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.35)', fontWeight: 600 }}>{r.type}</span>
+                                            <span style={{ fontSize: '0.72rem', color: 'rgba(255,255,255,0.35)', fontWeight: 600 }}>{r.exp} experience</span>
                                         </div>
                                     </div>
                                     <Link href="/appointment" className="apply-btn" style={{ borderColor: r.badge, color: r.badge }}>Apply →</Link>

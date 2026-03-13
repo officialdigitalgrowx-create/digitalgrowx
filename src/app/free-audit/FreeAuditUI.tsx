@@ -88,7 +88,7 @@ export default function FreeAuditUI() {
                         background: 'rgba(59,130,246,0.1)', border: '1px solid rgba(59,130,246,0.3)',
                         borderRadius: '99px', padding: '6px 18px', marginBottom: '24px',
                     }}>
-                        <span style={{ fontSize: '14px' }}>📋</span>
+                        <span style={{ fontSize: '14px' }}></span>
                         <span style={{ fontSize: '13px', fontWeight: 600, color: '#60a5fa', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                             Limited Free Audits Available
                         </span>
@@ -138,7 +138,7 @@ export default function FreeAuditUI() {
                                     borderRadius: '16px', padding: '24px',
                                 }}>
                                     <div style={{ fontSize: '24px', marginBottom: '12px' }}>
-                                        {i === 0 ? '🔍' : i === 1 ? '💰' : i === 2 ? '⚡' : '🛡️'}
+                                        {i === 0 ? '' : i === 1 ? '' : i === 2 ? '' : ''}
                                     </div>
                                     <h3 style={{ fontSize: '17px', fontWeight: 700, color: '#f1f5f9', marginBottom: '8px' }}>
                                         {b.title}

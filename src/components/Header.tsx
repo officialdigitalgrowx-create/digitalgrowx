@@ -86,7 +86,7 @@ export default function Header() {
             display: 'flex', alignItems: 'center', gap: '7px',
             textDecoration: 'none', flexShrink: 0,
           }}>
-            <span style={{ fontSize: '22px', lineHeight: 1 }}>⚡</span>
+            <span style={{ fontSize: '22px', lineHeight: 1 }}></span>
             <span style={{
               fontWeight: 800, fontSize: '18px', letterSpacing: '-0.4px',
               transition: 'color 0.35s ease',
@@ -131,7 +131,7 @@ export default function Header() {
                           <div style={{ padding: '8px 14px 12px' }}>
                             <Link href="/free-audit" onClick={() => setActiveDropdown(null)} className="audit-cta-banner" style={{ padding: '10px 14px' }}>
                               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                                <span style={{ fontSize: '16px' }}>📋</span>
+                                <span style={{ fontSize: '16px' }}></span>
                                 <span style={{ fontWeight: 700, fontSize: '12px', color: '#fff' }}>Free Audit Report</span>
                               </div>
                               <span style={{ color: '#f97316', fontWeight: 700, fontSize: '12px' }}>Claim →</span>
@@ -239,7 +239,11 @@ export default function Header() {
           >
             ×
           </button>
-          <MobileLink href="/industries" icon="" label="Industries" onClick={() => setMobileOpen(false)} />
+          <MobileTopLink href="/" onClick={() => setMobileOpen(false)}>Home</MobileTopLink>
+
+          <MobileAccordion label="Company" isOpen={mobileAccordion === 'company'} onToggle={() => setMobileAccordion(mobileAccordion === 'company' ? null : 'company')}>
+            {companyLinks.map(l => <MobileLink key={l.href} href={l.href} icon={l.icon} label={l.label} onClick={() => setMobileOpen(false)} />)}
+          </MobileAccordion>
 
           <MobileAccordion label="Services" isOpen={mobileAccordion === 'services'} onToggle={() => setMobileAccordion(mobileAccordion === 'services' ? null : 'services')}>
             <p style={{ fontSize: '10.5px', fontWeight: 800, color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase', margin: '8px 0 4px 14px' }}>Marketing</p>
@@ -247,6 +251,8 @@ export default function Header() {
             <p style={{ fontSize: '10.5px', fontWeight: 800, color: '#94a3b8', letterSpacing: '1px', textTransform: 'uppercase', margin: '12px 0 4px 14px' }}>Solutions</p>
             {solutionServices.map(s => <MobileLink key={s.href} href={s.href} icon={s.icon} label={s.label} onClick={() => setMobileOpen(false)} />)}
           </MobileAccordion>
+
+          <MobileTopLink href="/our-clients" onClick={() => setMobileOpen(false)}>Our Clients</MobileTopLink>
 
           <MobileTopLink href="/industries" onClick={() => setMobileOpen(false)}>Industries</MobileTopLink>
 
@@ -263,7 +269,7 @@ export default function Header() {
             background: '#0f172a', color: '#fff',
             fontWeight: 700, fontSize: '15px', textAlign: 'center', textDecoration: 'none',
           }}>
-            📋 Claim Free Audit →
+            Claim Free Audit →
           </Link>
         </div>
       </header>

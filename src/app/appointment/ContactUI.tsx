@@ -65,8 +65,8 @@ export default function ContactUI() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{
                 __html: JSON.stringify(
                     schemaBreadcrumb([
-                        { name: 'Home', url: 'https://www.digitalgrowx.com/' },
-                        { name: 'Contact Us', url: 'https://www.digitalgrowx.com/appointment' }
+                        { name: 'Home', url: 'https://www.global.digitalgrowx.com/' },
+                        { name: 'Contact Us', url: 'https://www.global.digitalgrowx.com/appointment' }
                     ])
                 )
             }} />
@@ -149,7 +149,7 @@ export default function ContactUI() {
                             onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.12)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.35)'; }}
                             onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.14)'; }}
                         >
-                            📞 {companyInfo.phone}
+                            {companyInfo.phone}
                         </a>
                         <a href={companyInfo.whatsapp} target="_blank" rel="noopener noreferrer" style={{
                             display: 'inline-flex', alignItems: 'center', gap: '8px',
@@ -166,7 +166,7 @@ export default function ContactUI() {
                             onMouseEnter={e => { e.currentTarget.style.background = 'rgba(37,211,102,0.18)'; }}
                             onMouseLeave={e => { e.currentTarget.style.background = 'rgba(37,211,102,0.1)'; }}
                         >
-                            💬 WhatsApp Us
+                            WhatsApp Us
                         </a>
                     </div>
                 </div>
@@ -212,7 +212,7 @@ export default function ContactUI() {
                                             color: '#334155',
                                             lineHeight: 1.5,
                                         }}>
-                                            {benefit.replace(/^✅\s*/, '')}
+                                            {benefit.replace(/^\s*/, '')}
                                         </li>
                                     ))}
                                 </ul>
@@ -238,41 +238,41 @@ export default function ContactUI() {
                                     Contact Details
                                 </h2>
 
-                                {[
+                                {[/* eslint-disable @typescript-eslint/no-unused-vars */
                                     {
-                                        icon: '📍',
+                                        icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="#2563eb" strokeWidth="1.5"/><circle cx="12" cy="10" r="3" stroke="#2563eb" strokeWidth="1.5"/></svg>,
                                         label: 'Our Office',
                                         content: companyInfo.address,
                                         href: companyInfo.googleMaps,
                                         isAddress: true,
                                     },
                                     {
-                                        icon: '📞',
+                                        icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
                                         label: 'Call / WhatsApp',
                                         content: companyInfo.phone,
                                         href: `tel:${companyInfo.phone.replace(/\s/g, '')}`,
                                     },
                                     {
-                                        icon: '📞',
+                                        icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
                                         label: 'Sales Line',
                                         content: companyInfo.phoneSales,
                                         href: `tel:${companyInfo.phoneSales.replace(/\s/g, '')}`,
                                     },
                                     {
-                                        icon: '✉️',
+                                        icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2" y="5" width="20" height="14" rx="2" stroke="#2563eb" strokeWidth="1.5"/><path d="M2 8l10 6 10-6" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
                                         label: 'Email',
                                         content: companyInfo.email,
                                         href: `mailto:${companyInfo.email}`,
                                     },
                                     {
-                                        icon: '⏰',
+                                        icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="#2563eb" strokeWidth="1.5"/><path d="M12 6v6l4 2" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round"/></svg>,
                                         label: 'Hours',
                                         content: 'Mon – Sat: 10:00 AM – 7:00 PM',
                                         href: null,
                                     },
                                 ].map((item, i) => (
                                     <div key={i} className="contact-info-item">
-                                        <div className="contact-icon">{item.icon}</div>
+                                        <div className="contact-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{item.icon}</div>
                                         <div style={{ minWidth: 0 }}>
                                             <div style={{
                                                 fontSize: '11px',
@@ -358,7 +358,6 @@ export default function ContactUI() {
                                             border: '1px solid rgba(255,255,255,0.1)',
                                             borderRadius: '10px',
                                             display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                            fontSize: '16px',
                                             transition: 'background 0.2s',
                                             textDecoration: 'none',
                                             color: 'rgba(255,255,255,0.7)',
@@ -366,7 +365,11 @@ export default function ContactUI() {
                                             onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.14)')}
                                             onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.07)')}
                                             aria-label="Facebook"
-                                        >f</a>
+                                        >
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </a>
                                     )}
                                     {companyInfo.socials.instagram && (
                                         <a href={companyInfo.socials.instagram} target="_blank" rel="noopener noreferrer" style={{
@@ -375,7 +378,6 @@ export default function ContactUI() {
                                             border: '1px solid rgba(255,255,255,0.1)',
                                             borderRadius: '10px',
                                             display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                            fontSize: '16px',
                                             transition: 'background 0.2s',
                                             textDecoration: 'none',
                                             color: 'rgba(255,255,255,0.7)',
@@ -383,7 +385,13 @@ export default function ContactUI() {
                                             onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.14)')}
                                             onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.07)')}
                                             aria-label="Instagram"
-                                        >ig</a>
+                                        >
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="2" y="2" width="20" height="20" rx="5" stroke="currentColor" strokeWidth="1.5"/>
+                                                <circle cx="12" cy="12" r="4" stroke="currentColor" strokeWidth="1.5"/>
+                                                <circle cx="18" cy="6" r="1" fill="currentColor"/>
+                                            </svg>
+                                        </a>
                                     )}
                                     {companyInfo.socials.linkedin && (
                                         <a href={companyInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" style={{
@@ -392,7 +400,6 @@ export default function ContactUI() {
                                             border: '1px solid rgba(255,255,255,0.1)',
                                             borderRadius: '10px',
                                             display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                            fontSize: '16px',
                                             transition: 'background 0.2s',
                                             textDecoration: 'none',
                                             color: 'rgba(255,255,255,0.7)',
@@ -400,7 +407,13 @@ export default function ContactUI() {
                                             onMouseEnter={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.14)')}
                                             onMouseLeave={e => (e.currentTarget.style.background = 'rgba(255,255,255,0.07)')}
                                             aria-label="LinkedIn"
-                                        >in</a>
+                                        >
+                                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <rect x="2" y="9" width="4" height="12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <circle cx="4" cy="4" r="2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        </a>
                                     )}
                                 </div>
                             </div>
@@ -608,7 +621,7 @@ export default function ContactUI() {
                                         textDecoration: 'none',
                                         boxShadow: '0 6px 20px rgba(37,211,102,0.35)',
                                     }}>
-                                        💬 Get a faster reply on WhatsApp
+                                        Get a faster reply on WhatsApp
                                     </a>
                                 </div>
                             )}
@@ -641,7 +654,10 @@ export default function ContactUI() {
                             alignItems: 'center',
                             gap: '8px',
                         }}>
-                            <span style={{ fontSize: '16px' }}>📍</span>
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="#2563eb" strokeWidth="1.5"/>
+                                <circle cx="12" cy="10" r="3" stroke="#2563eb" strokeWidth="1.5"/>
+                            </svg>
                             <div>
                                 <div style={{ fontSize: '12px', fontWeight: 800, color: '#0f172a' }}>Digital GrowX</div>
                                 <div style={{ fontSize: '11px', color: '#64748b' }}>Nikol, Ahmedabad</div>

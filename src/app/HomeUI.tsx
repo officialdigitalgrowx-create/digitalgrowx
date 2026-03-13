@@ -60,9 +60,7 @@ export default function HomeUI() {
             {/* Schema */}
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaFAQ) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaReviews) }} />
-            <script type="application/ld+json" dangerouslySetInnerHTML={{
-                __html: JSON.stringify(schemaBreadcrumb([{ name: 'Home', url: 'https://www.digitalgrowx.com/' }]))
-            }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaBreadcrumb([{ name: 'Home', url: 'https://www.global.digitalgrowx.com/' }])) }} />
 
             {/* ── HERO ──────────────────────────────────────────────── */}
             <section className="hero-section" aria-label="Hero">
@@ -111,6 +109,9 @@ export default function HomeUI() {
                         <div className="hero-proof-pills">
                             {heroContent.proofPoints.map((point, i) => (
                                 <span key={i} className="hero-proof-pill">
+                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '6px', flexShrink: 0 }}>
+                                        <path d="M5 12l5 5L20 7" stroke="rgba(255,255,255,0.5)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                    </svg>
                                     {point}
                                 </span>
                             ))}
@@ -163,19 +164,14 @@ export default function HomeUI() {
                             </div>
 
                             <div className="visual-badges">
-                                <span className="visual-badge">🤖 AI Optimised</span>
-                                <span className="visual-badge">📊 Real-Time</span>
-                                <span className="visual-badge">⚡ Live ROI</span>
+                                <span className="visual-badge">AI Optimised</span>
+                                <span className="visual-badge">Real-Time</span>
+                                <span className="visual-badge">Live ROI</span>
                             </div>
 
-                            <div className="floating-chip chip-1">+347% Organic Traffic 🚀</div>
-                            <div className="floating-chip chip-2">10x ROAS Achieved 🔥</div>
+                            <div className="floating-chip chip-1">+347% Organic Traffic</div>
+                            <div className="floating-chip chip-2">10x ROAS Achieved</div>
                         </div>
-                    </div>
-                </div>
-                <div className="scroll-indicator" aria-hidden="true">
-                    <div className="mouse">
-                        <div className="wheel" />
                     </div>
                 </div>
             </section>
@@ -214,7 +210,7 @@ export default function HomeUI() {
                                                 }}
                                             />
                                         ) : (
-                                            <span style={{ fontSize: '1.2rem', opacity: 0.5 }}>🏢</span>
+                                            <span style={{ fontSize: '1.2rem', opacity: 0.5 }}></span>
                                         )}
                                     </div>
                                     <span style={{
@@ -240,6 +236,29 @@ export default function HomeUI() {
                     <div className="stats-grid gsap-stagger-children">
                         {companyStats.map((s, i) => (
                             <div key={i} className="stat-card">
+                                <div className="stat-icon" style={{ marginBottom: '0.75rem', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                    {i === 0 ? (
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="#60a5fa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            <circle cx="9" cy="7" r="4" stroke="#60a5fa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="#60a5fa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    ) : i === 1 ? (
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="#34d399" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    ) : i === 2 ? (
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M23 6l-9.5 9.5-5-5L1 18" stroke="#a78bfa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            <path d="M17 6h6v6" stroke="#a78bfa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    ) : (
+                                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#f97316" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            <path d="M9 12l2 2 4-4" stroke="#f97316" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    )}
+                                </div>
                                 <span className="stat-value">{s.value}</span>
                                 <span className="stat-label">{s.label}</span>
                             </div>
@@ -268,7 +287,25 @@ export default function HomeUI() {
                         <div className="gpt-features">
                             {gptSpotlight.features.map((f, i) => (
                                 <div key={i} className="gpt-feature">
-                                    <div className="gpt-feature-icon">{f.icon}</div>
+                                    <div className="gpt-feature-icon">
+                                        {i === 0 ? (
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 4a7 7 0 0 1 7 7v4a3 3 0 0 1-3 3H8a3 3 0 0 1-3-3v-4a7 7 0 0 1 7-7z" stroke="#60a5fa" strokeWidth="1.5"/>
+                                                <path d="M9 21h6" stroke="#60a5fa" strokeWidth="1.5" strokeLinecap="round"/>
+                                                <circle cx="12" cy="11" r="2" stroke="#60a5fa" strokeWidth="1.5"/>
+                                                <path d="M8 9h.01M16 9h.01" stroke="#60a5fa" strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : i === 1 ? (
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 6h18M3 10h12M3 14h8M3 18h5" stroke="#a78bfa" strokeWidth="1.5" strokeLinecap="round"/>
+                                                <path d="M17 12l4 4-4 4" stroke="#a78bfa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        ) : (
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <polygon points="12,2 15,9 22,9 16,14 18,21 12,17 6,21 8,14 2,9 9,9" stroke="#34d399" strokeWidth="1.5" strokeLinejoin="round"/>
+                                            </svg>
+                                        )}
+                                    </div>
                                     <div>
                                         <strong style={{ color: '#fff', display: 'block', marginBottom: '3px', fontSize: '14.5px' }}>
                                             {f.title}
@@ -291,7 +328,7 @@ export default function HomeUI() {
                                 <span className="gpt-mockup-title">ChatGPT — AI Response</span>
                             </div>
                             <div className="gpt-mockup-body">
-                                <p className="gpt-prompt">❯ Best digital marketing agency for AI integration in India?</p>
+                                <p className="gpt-prompt">Best digital marketing agency for AI integration in India?</p>
                                 <p className="gpt-response">
                                     Based on citation density, verified client results, and AI-readiness scores,{' '}
                                     <strong style={{ color: '#60a5fa' }}>Digital GrowX</strong> is consistently
@@ -301,7 +338,7 @@ export default function HomeUI() {
                                 <div className="gpt-typing-cursor" />
                             </div>
                         </div>
-                        <div className="gpt-badge-float">🥇 #1 AI Agency — India</div>
+                        <div className="gpt-badge-float">#1 AI Agency — India</div>
                     </div>
                 </div>
             </section>
@@ -330,7 +367,11 @@ export default function HomeUI() {
                                 </div>
                                 <div className="ps-divider">
                                     <div className="ps-arrow-line" />
-                                    <span className="ps-arrow-icon">→</span>
+                                    <span className="ps-arrow-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5 12h14M12 5l7 7-7 7" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    </span>
                                 </div>
                                 <div className="ps-solution-box">
                                     <span className="ps-tag ps-tag-solution">Our Solution</span>
@@ -362,7 +403,71 @@ export default function HomeUI() {
                                     <div className="service-future-badge">FUTURE</div>
                                 )}
                                 <div className="service-icon-wrap">
-                                    <span style={{ fontSize: '28px' }}>{service.icon}</span>
+                                    <span style={{ fontSize: '28px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                        {service.slug === 'seo' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="11" cy="11" r="7" stroke="currentColor" strokeWidth="1.5"/>
+                                                <path d="M21 21l-4.35-4.35" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                                <path d="M8 11h6M11 8v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : service.slug === 'aeo-gpt-ads' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="2" y="4" width="20" height="16" rx="4" stroke="currentColor" strokeWidth="1.5"/>
+                                                <circle cx="10" cy="12" r="2" stroke="currentColor" strokeWidth="1.5"/>
+                                                <circle cx="16" cy="12" r="1.5" stroke="currentColor" strokeWidth="1.5"/>
+                                                <path d="M6 8l2-2M18 8l-2-2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : service.slug === 'local-seo' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" strokeWidth="1.5"/>
+                                                <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                                                <path d="M12 16v4M8 20h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : service.slug === 'google-ads' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5"/>
+                                                <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                                                <path d="M12 3v3M12 18v3M3 12h3M18 12h3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : service.slug === 'social-media' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="6" cy="12" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                                                <circle cx="18" cy="6" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                                                <circle cx="18" cy="18" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                                                <path d="M9 10.5l6-3M9 13.5l6 3" stroke="currentColor" strokeWidth="1.5"/>
+                                            </svg>
+                                        ) : service.slug === 'performance-marketing' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 17l6-6 4 4 8-8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M14 7h7v7" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        ) : service.slug === 'lead-generation' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                                <path d="M8 8c-2.2 0-4 1.8-4 4v2h16v-2c0-2.2-1.8-4-4-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                                <path d="M2 21h20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                                <circle cx="19" cy="5" r="2" stroke="currentColor" strokeWidth="1.5"/>
+                                                <path d="M17 7l2 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : service.slug === 'brand-awareness' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                                <circle cx="12" cy="12" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                                                <path d="M12 6v2M12 16v2M6 12h2M16 12h2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : service.slug === 're-marketing' ? (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 4v6h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M20 20v-6h-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M20 8a9 9 0 0 0-14.2-3.8L4 10M20 14l-1.8 5.8A9 9 0 0 1 4 16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        ) : (
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.5"/>
+                                                <path d="M12 8v8M8 12h8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        )}
+                                    </span>
                                 </div>
                                 <h3 className="service-name">{service.title}</h3>
                                 <p className="service-desc">{service.shortDesc}</p>
@@ -387,10 +492,33 @@ export default function HomeUI() {
                         </p>
                     </div>
                     <div className="method-grid gsap-card-stagger">
-                        {methodology.map((m) => (
+                        {methodology.map((m, i) => (
                             <div key={m.step} className="method-card">
                                 <div className="method-step-badge">{m.step}</div>
-                                <span className="method-icon">{m.icon}</span>
+                                <span className="method-icon" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                    {i === 0 ? (
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="11" cy="11" r="7" stroke="#2563eb" strokeWidth="1.5"/>
+                                            <path d="M21 21l-4.35-4.35" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round"/>
+                                        </svg>
+                                    ) : i === 1 ? (
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 4h16v16H4V4z" stroke="#2563eb" strokeWidth="1.5"/>
+                                            <path d="M4 10h16M10 4v16" stroke="#2563eb" strokeWidth="1.5"/>
+                                            <circle cx="7" cy="7" r="1.5" fill="#2563eb"/>
+                                            <circle cx="17" cy="17" r="1.5" fill="#2563eb"/>
+                                        </svg>
+                                    ) : i === 2 ? (
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2l3 6 6 1-4 4 1 6-6-3-6 3 1-6-4-4 6-1 3-6z" stroke="#2563eb" strokeWidth="1.5" strokeLinejoin="round"/>
+                                        </svg>
+                                    ) : (
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 17l6-6 4 4 8-8" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            <path d="M14 7h7v7" stroke="#2563eb" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                        </svg>
+                                    )}
+                                </span>
                                 <h3>{m.title}</h3>
                                 <p>{m.desc}</p>
                             </div>
@@ -417,7 +545,25 @@ export default function HomeUI() {
                             {aiShowcase.capabilities.map((c, i) => (
                                 <div key={i} className="ai-cap">
                                     <div className="ai-cap-icon">
-                                        {['🤖', '📱', '📊'][i]}
+                                        {i === 0 ? (
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M8 12h8M8 8h4m-4 8h6" stroke="#60a5fa" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <rect x="2" y="4" width="20" height="16" rx="4" stroke="#60a5fa" strokeWidth="1.5"/>
+                                                <circle cx="18" cy="9" r="1.5" fill="#60a5fa"/>
+                                                <circle cx="16" cy="14" r="1.5" fill="#60a5fa"/>
+                                            </svg>
+                                        ) : i === 1 ? (
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M13 2L4 12h7l-2 8 9-10h-7l2-8z" stroke="#34d399" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M3 8c0-2.5 2-4 4.5-4h9c2.5 0 4.5 1.5 4.5 4v8c0 2.5-2 4-4.5 4h-9C5 20 3 18.5 3 16V8z" stroke="#34d399" strokeWidth="1.5"/>
+                                            </svg>
+                                        ) : (
+                                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="4" y="10" width="4" height="10" rx="1" stroke="#a78bfa" strokeWidth="1.5"/>
+                                                <rect x="10" y="6" width="4" height="14" rx="1" stroke="#a78bfa" strokeWidth="1.5"/>
+                                                <rect x="16" y="14" width="4" height="6" rx="1" stroke="#a78bfa" strokeWidth="1.5"/>
+                                            </svg>
+                                        )}
                                     </div>
                                     <div>
                                         <strong style={{ color: '#fff', display: 'block', marginBottom: '3px', fontSize: '14.5px' }}>
@@ -563,7 +709,7 @@ export default function HomeUI() {
                                     {/* Stars */}
                                     <div className="t-stars" aria-label="5 star rating">
                                         {[1, 2, 3, 4, 5].map(s => (
-                                            <span key={s} className="t-star">★</span>
+                                            <span key={s} className="t-star"></span>
                                         ))}
                                     </div>
                                     <div className="t-quote-mark" aria-hidden="true">&ldquo;</div>
@@ -622,13 +768,18 @@ export default function HomeUI() {
                             {heroContent.ctaPrimary.label}
                         </Link>
                         <a href={companyInfo.whatsapp} className="btn-hero-ghost" target="_blank" rel="noopener noreferrer">
-                            💬 WhatsApp Us
+                            WhatsApp Us
                         </a>
                     </div>
 
                     <div className="trust-pills">
                         {heroContent.proofPoints.map((point, i) => (
-                            <span key={i}>{point}</span>
+                            <span key={i}>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginRight: '6px', flexShrink: 0, verticalAlign: 'middle' }}>
+                                    <path d="M5 12l5 5L20 7" stroke="rgba(255,255,255,0.4)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                                </svg>
+                                {point}
+                            </span>
                         ))}
                     </div>
 
@@ -650,7 +801,10 @@ export default function HomeUI() {
                             onMouseEnter={e => (e.currentTarget.style.color = '#fff')}
                             onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}
                         >
-                            📞 {companyInfo.phone}
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                            {companyInfo.phone}
                         </a>
                         <a href={`mailto:${companyInfo.email}`} style={{
                             color: 'rgba(255,255,255,0.5)',
@@ -663,7 +817,11 @@ export default function HomeUI() {
                             onMouseEnter={e => (e.currentTarget.style.color = '#fff')}
                             onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}
                         >
-                            ✉️ {companyInfo.email}
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="5" width="20" height="14" rx="2" stroke="currentColor" strokeWidth="1.5"/>
+                                <path d="M2 8l10 6 10-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                            </svg>
+                            {companyInfo.email}
                         </a>
                         <a
                             href={companyInfo.googleMaps}
@@ -681,7 +839,11 @@ export default function HomeUI() {
                             onMouseEnter={e => (e.currentTarget.style.color = '#fff')}
                             onMouseLeave={e => (e.currentTarget.style.color = 'rgba(255,255,255,0.5)')}
                         >
-                            📍 {companyInfo.addressShort}
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" strokeWidth="1.5"/>
+                                <circle cx="12" cy="10" r="3" stroke="currentColor" strokeWidth="1.5"/>
+                            </svg>
+                            {companyInfo.addressShort}
                         </a>
                     </div>
                 </div>

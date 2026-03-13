@@ -17,7 +17,7 @@ export const metadata: Metadata = {
         default: 'Digital GrowX | #1 Marketing Agency Ahmedabad',
         template: '%s | Digital GrowX'
     },
-    metadataBase: new URL('https://www.digitalgrowx.com'),
+    metadataBase: new URL('https://www.global.digitalgrowx.com'),
 };
 
 export default function RootLayout({

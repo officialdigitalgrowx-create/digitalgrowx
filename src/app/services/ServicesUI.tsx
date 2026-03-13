@@ -124,8 +124,8 @@ export default function ServicesUI() {
                 <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaServicesList) }} />
                 <script type="application/ld+json" dangerouslySetInnerHTML={{
                     __html: JSON.stringify(schemaBreadcrumb([
-                        { name: 'Home', url: 'https://www.digitalgrowx.com/' },
-                        { name: 'Services', url: 'https://www.digitalgrowx.com/services' }
+                        { name: 'Home', url: 'https://www.global.digitalgrowx.com/' },
+                        { name: 'Services', url: 'https://www.global.digitalgrowx.com/services' }
                     ]))
                 }} />
 
@@ -184,7 +184,7 @@ export default function ServicesUI() {
                             fontWeight: 700, fontSize: '14px',
                             boxShadow: '0 6px 24px rgba(124,58,237,0.35)',
                         }}>
-                            📋 Get Free Audit →
+                            Get Free Audit →
                         </Link>
                         <Link href="/appointment" style={{
                             padding: '12px 32px', borderRadius: '99px', textDecoration: 'none',

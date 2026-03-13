@@ -116,7 +116,7 @@ export default function PrivacyPage() {
                             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                                 {section.items.map((item) => (
                                     <li key={item} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.65rem', color: 'rgba(255,255,255,0.7)', fontSize: '0.93rem' }}>
-                                        <span style={{ color: '#7c3aed', fontWeight: 900, flexShrink: 0, marginTop: '0.1rem' }}>✓</span>
+                                        <span style={{ color: '#7c3aed', fontWeight: 900, flexShrink: 0, marginTop: '0.1rem' }}></span>
                                         {item}
                                     </li>
                                 ))}
@@ -164,19 +164,19 @@ export default function PrivacyPage() {
                         <p style={{ color: 'rgba(255,255,255,0.55)', marginBottom: '1.25rem', fontSize: '0.95rem' }}>If You Have Any Questions or Requests Related to Your Privacy, You May Contact Us At:</p>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
                             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', flexWrap: 'wrap' }}>
-                                <span style={{ color: '#a78bfa', fontWeight: 700, fontSize: '0.9rem', minWidth: '80px' }}>📧 Email:</span>
+                                <span style={{ color: '#a78bfa', fontWeight: 700, fontSize: '0.9rem', minWidth: '80px' }}>Email:</span>
                                 <a href="mailto:info@digitalgrowx.com" style={{ color: '#818cf8', fontSize: '0.93rem', textDecoration: 'underline' }}>info@digitalgrowx.com</a>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', flexWrap: 'wrap' }}>
-                                <span style={{ color: '#a78bfa', fontWeight: 700, fontSize: '0.9rem', minWidth: '80px' }}>📞 Phone:</span>
+                                <span style={{ color: '#a78bfa', fontWeight: 700, fontSize: '0.9rem', minWidth: '80px' }}>Phone:</span>
                                 <a href="tel:+919023419101" style={{ color: '#818cf8', fontSize: '0.93rem', textDecoration: 'underline' }}>+91 90234 19101</a>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', flexWrap: 'wrap' }}>
-                                <span style={{ color: '#a78bfa', fontWeight: 700, fontSize: '0.9rem', minWidth: '80px' }}>💬 WhatsApp:</span>
+                                <span style={{ color: '#a78bfa', fontWeight: 700, fontSize: '0.9rem', minWidth: '80px' }}>WhatsApp:</span>
                                 <a href="https://wa.me/919023419101" target="_blank" rel="noopener noreferrer" style={{ color: '#818cf8', fontSize: '0.93rem', textDecoration: 'underline' }}>Chat on WhatsApp</a>
                             </div>
                             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.75rem', flexWrap: 'wrap' }}>
-                                <span style={{ color: '#a78bfa', fontWeight: 700, fontSize: '0.9rem', minWidth: '80px' }}>📍 Address:</span>
+                                <span style={{ color: '#a78bfa', fontWeight: 700, fontSize: '0.9rem', minWidth: '80px' }}>Address:</span>
                                 <span style={{ color: 'rgba(255,255,255,0.65)', fontSize: '0.93rem', lineHeight: 1.6 }}>205, Ananta Elysium, Hill Town Circle Road, Bhakti Circle to Mango Plus Cinemas Road, Nikol, Ahmedabad, Gujarat 382345.</span>
                             </div>
                         </div>

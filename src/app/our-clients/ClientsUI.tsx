@@ -29,8 +29,8 @@ export default function ClientsUI() {
             <script type="application/ld+json" dangerouslySetInnerHTML={{
                 __html: JSON.stringify(
                     schemaBreadcrumb([
-                        { name: 'Home', url: 'https://www.digitalgrowx.com/' },
-                        { name: 'Our Clients', url: 'https://www.digitalgrowx.com/our-clients' }
+                        { name: 'Home', url: 'https://www.global.digitalgrowx.com/' },
+                        { name: 'Our Clients', url: 'https://www.global.digitalgrowx.com/our-clients' }
                     ])
                 )
             }} />
@@ -138,7 +138,7 @@ export default function ClientsUI() {
                                 {client.logo ? (
                                     <img src={client.logo} alt={`${client.name} logo`} style={{ maxWidth: '100px', maxHeight: '52px', objectFit: 'contain', display: 'block' }} />
                                 ) : (
-                                    <div style={{ fontSize: '1.75rem', opacity: 0.4 }}>🏢</div>
+                                    <div style={{ fontSize: '1.75rem', opacity: 0.4 }}></div>
                                 )}
                             </div>
 

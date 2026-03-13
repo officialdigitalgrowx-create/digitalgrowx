@@ -50,7 +50,7 @@ export default function IndustriesPage() {
                             background: 'rgba(249,115,22,0.1)', border: '1px solid rgba(249,115,22,0.3)',
                             borderRadius: '99px', padding: '6px 18px', marginBottom: '28px',
                         }}>
-                            <span style={{ fontSize: '14px' }}>🏭</span>
+                            <span style={{ fontSize: '14px' }}></span>
                             <span style={{ fontSize: '13px', fontWeight: 600, color: '#fb923c', letterSpacing: '0.06em', textTransform: 'uppercase' }}>
                                 Industries We Serve
                             </span>
@@ -155,7 +155,54 @@ export default function IndustriesPage() {
                                         display: 'flex', alignItems: 'center', justifyContent: 'center',
                                         fontSize: '26px', marginBottom: '20px',
                                     }}>
-                                        {ind.icon}
+                                        {idx === 0 ? ( // Real Estate
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M9 22V12h6v10" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        ) : idx === 1 ? ( // Education
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22 10l-10 6-10-6" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M6 10v7c0 2 3 4 6 4s6-2 6-4v-7" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M12 4L2 10l10 6 10-6-10-6z" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        ) : idx === 2 ? ( // Manufacturing
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="2" y="7" width="20" height="14" rx="2" stroke={palette.color} strokeWidth="1.5"/>
+                                                <path d="M17 7V5a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v2" stroke={palette.color} strokeWidth="1.5"/>
+                                                <path d="M12 12v.01M6 12v.01M18 12v.01" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : idx === 3 ? ( // Healthcare
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22 12h-4l-3 9L8 3l-3 9H2" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        ) : idx === 4 ? ( // Food & Hospitality
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 2v20M21 2v20M3 10h18M3 18h18M7 2v20M17 2v20" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : idx === 5 ? ( // Beauty & Wellness
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke={palette.color} strokeWidth="1.5"/>
+                                                <path d="M12 18a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" stroke={palette.color} strokeWidth="1.5"/>
+                                                <circle cx="12" cy="12" r="2" stroke={palette.color} strokeWidth="1.5"/>
+                                            </svg>
+                                        ) : idx === 6 ? ( // Media & Entertainment
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="2" y="5" width="20" height="14" rx="2" stroke={palette.color} strokeWidth="1.5"/>
+                                                <path d="M10 9l5 3-5 3V9z" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        ) : idx === 7 ? ( // Events
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect x="3" y="4" width="18" height="18" rx="2" stroke={palette.color} strokeWidth="1.5"/>
+                                                <path d="M16 2v4M8 2v4M3 10h18" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round"/>
+                                            </svg>
+                                        ) : ( // Interior & Furniture
+                                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20 9V3H4v6" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M4 21V9h16v12" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                                <path d="M9 21v-6h6v6" stroke={palette.color} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                                            </svg>
+                                        )}
                                     </div>
 
                                     {/* Name */}

@@ -44,7 +44,7 @@ export default async function InsightPage({ params }: { params: Promise<{ slug: 
                 description={post.excerpt}
                 author={post.author}
                 publishedDate={new Date(post.date).toISOString()}
-                image={`https://www.digitalgrowx.com/images/blog/${post.slug}.jpg`}
+                image={`https://www.global.digitalgrowx.com/images/blog/${post.slug}.jpg`}
                 content={post.content || post.excerpt}
             />
             <BreadcrumbSchema />
@@ -67,7 +67,7 @@ export default async function InsightPage({ params }: { params: Promise<{ slug: 
                     <div className="container" style={{ maxWidth: '700px' }}>
                         {/* AI Summary Box */}
                         <div className="bg-blue-50/50 border border-blue-100 p-6 rounded-xl mb-12">
-                            <h3 className="text-sm font-bold uppercase tracking-wider text-blue-600 mb-2">⚡ Quick Summary</h3>
+                            <h3 className="text-sm font-bold uppercase tracking-wider text-blue-600 mb-2">Quick Summary</h3>
                             <p className="text-gray-700 text-sm leading-relaxed">{post.excerpt}</p>
                         </div>
 

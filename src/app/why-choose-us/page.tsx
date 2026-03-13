@@ -3,42 +3,42 @@ import Link from 'next/link';
 
 const reasons = [
     {
-        icon: '🤖',
+        icon: '',
         title: 'AI-First Approach',
         desc: 'We don\'t just use AI as a buzzword — our entire workflow is built on machine learning, predictive analytics, and GPT-powered automation to outperform traditional agencies by 10x.',
         accent: '#a78bfa',
         glow: 'rgba(167,139,250,0.25)',
     },
     {
-        icon: '📈',
+        icon: '',
         title: 'Measurable ROI, Always',
         desc: 'Every campaign we run is tracked with live dashboards and real metrics. No fluff reports — only real numbers that show exactly how your investment is growing.',
         accent: '#34d399',
         glow: 'rgba(52,211,153,0.25)',
     },
     {
-        icon: '⚡',
+        icon: '',
         title: 'Launch in 7 Days',
         desc: 'We move at startup speed. From onboarding to live campaigns in under 7 days. Our battle-tested playbooks mean zero wasted time and zero confusion.',
         accent: '#f97316',
         glow: 'rgba(249,115,22,0.25)',
     },
     {
-        icon: '🎯',
+        icon: '',
         title: 'Hyper-Targeted Strategies',
         desc: 'Cookie-cutter plans don\'t work. We research your exact market, competitors, and audience to build a precision strategy that captures your ideal customers.',
         accent: '#60a5fa',
         glow: 'rgba(96,165,250,0.25)',
     },
     {
-        icon: '🛡️',
+        icon: '',
         title: 'Transparent & Accountable',
         desc: 'You own every asset, every ad account, every report. We operate with 100% transparency — what you see is what you get, no hidden fees, no vague metrics.',
         accent: '#fb7185',
         glow: 'rgba(251,113,133,0.25)',
     },
     {
-        icon: '🌍',
+        icon: '',
         title: 'Proven Global Results',
         desc: 'From local Ahmedabad brands to international enterprises, we\'ve driven growth across 15+ industries. Your niche is not too small or too big for our expertise.',
         accent: '#fcd34d',
@@ -62,19 +62,19 @@ const testimonials = [
         quote: 'Digital GrowX tripled our leads in 90 days. Their AI targeting is unlike anything we\'ve experienced before.',
         name: 'Rahul Mehta',
         role: 'CEO, Skyline Realty Group',
-        avatar: '👨‍💼',
+        avatar: '',
     },
     {
         quote: 'We went from 0 to 50K monthly visitors in just 4 months. The ROI speaks for itself.',
         name: 'Priya Shah',
         role: 'Founder, NovaByte Store',
-        avatar: '👩‍💼',
+        avatar: '',
     },
     {
         quote: 'Their transparent reporting and AI strategy gave us the clarity we needed to scale confidently.',
         name: 'Dr. Ananya Rao',
         role: 'Director, ClearSkin Clinics',
-        avatar: '👩‍⚕️',
+        avatar: '',
     },
 ];
 
@@ -312,7 +312,7 @@ export default function WhyChooseUsPage() {
                                 border: '1px solid rgba(255,255,255,0.15)',
                                 color: '#fff', fontWeight: 700, fontSize: '0.95rem', textDecoration: 'none',
                             }}>
-                                📋 Free Audit First
+                                Free Audit First
                             </Link>
                         </div>
                     </div>

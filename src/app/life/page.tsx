@@ -2,21 +2,21 @@
 import Link from 'next/link';
 
 const perks = [
-    { icon: '🏖️', title: 'Remote-First Culture', desc: 'Work from anywhere in India. We judge output, not office hours.' },
-    { icon: '📚', title: 'Monthly Learning Budget', desc: 'Every team member gets ₹5,000/month for courses, books, and tools.' },
-    { icon: '🚀', title: 'Accelerated Growth', desc: 'Learn more in 6 months here than you would in 3 years at a traditional agency.' },
-    { icon: '💰', title: 'Performance Bonuses', desc: 'Get rewarded directly when clients win. No cap on bonuses.' },
-    { icon: '🤖', title: 'AI Tools Access', desc: 'Full access to ChatGPT, Gemini, Midjourney, and 20+ premium AI tools.' },
-    { icon: '🎯', title: 'Ownership Mindset', desc: 'We give you real responsibility from day one. No hand-holding.' },
+    { icon: '', title: 'Remote-First Culture', desc: 'Work from anywhere in India. We judge output, not office hours.' },
+    { icon: '', title: 'Monthly Learning Budget', desc: 'Every team member gets ₹5,000/month for courses, books, and tools.' },
+    { icon: '', title: 'Accelerated Growth', desc: 'Learn more in 6 months here than you would in 3 years at a traditional agency.' },
+    { icon: '', title: 'Performance Bonuses', desc: 'Get rewarded directly when clients win. No cap on bonuses.' },
+    { icon: '', title: 'AI Tools Access', desc: 'Full access to ChatGPT, Gemini, Midjourney, and 20+ premium AI tools.' },
+    { icon: '', title: 'Ownership Mindset', desc: 'We give you real responsibility from day one. No hand-holding.' },
 ];
 
 const moments = [
-    { emoji: '🏆', label: 'Quarterly offsite retreats' },
-    { emoji: '🎮', label: 'Gaming & chill sessions' },
-    { emoji: '🍕', label: 'Team lunches & celebrations' },
-    { emoji: '🎤', label: 'Monthly knowledge-sharing talks' },
-    { emoji: '🧘', label: 'Mental wellness support' },
-    { emoji: '🌍', label: 'International client exposure' },
+    { emoji: '', label: 'Quarterly offsite retreats' },
+    { emoji: '', label: 'Gaming & chill sessions' },
+    { emoji: '', label: 'Team lunches & celebrations' },
+    { emoji: '', label: 'Monthly knowledge-sharing talks' },
+    { emoji: '', label: 'Mental wellness support' },
+    { emoji: '', label: 'International client exposure' },
 ];
 
 export default function LifePage() {

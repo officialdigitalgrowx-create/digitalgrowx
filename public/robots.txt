@@ -33,5 +33,5 @@ User-agent: cohere-ai
 Allow: /
 
 # Sitemaps
-Sitemap: https://digitalgrowx.com/sitemap.xml
-Sitemap: https://digitalgrowx.com/sitemap-news.xml
+Sitemap: https://global.digitalgrowx.com/sitemap.xml
+Sitemap: https://global.digitalgrowx.com/sitemap-news.xml

@@ -72,7 +72,7 @@ export default function ServicePageClient({ service, relatedServices }: { servic
                             <ul style={{ marginTop: '2rem', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
                                 {(service.deliverables || []).slice(0, 3).map((d, i) => (
                                     <li key={i} style={{ display: 'flex', gap: '1rem', color: 'white', alignItems: 'center' }}>
-                                        <span style={{ color: 'var(--color-primary)', fontSize: '1.5rem' }}>⚡</span>
+                                        <span style={{ color: 'var(--color-primary)', fontSize: '1.5rem' }}></span>
                                         <span>{d}</span>
                                     </li>
                                 ))}

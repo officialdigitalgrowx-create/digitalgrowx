@@ -18,8 +18,8 @@ export default function AboutUI() {
                 <script type="application/ld+json" dangerouslySetInnerHTML={{
                     __html: JSON.stringify(
                         schemaBreadcrumb([
-                            { name: 'Home', url: 'https://www.digitalgrowx.com/' },
-                            { name: 'About', url: 'https://www.digitalgrowx.com/about' }
+                            { name: 'Home', url: 'https://www.global.digitalgrowx.com/' },
+                            { name: 'About', url: 'https://www.global.digitalgrowx.com/about' }
                         ])
                     )
                 }} />
@@ -115,7 +115,7 @@ export default function AboutUI() {
                                             className="team-photo"
                                         />
                                     ) : (
-                                        <div style={{ fontSize: '2.5rem', position: 'relative', zIndex: 1 }}>👤</div>
+                                        <div style={{ fontSize: '2.5rem', position: 'relative', zIndex: 1 }}></div>
                                     )}
                                 </div>
                                 <div style={{ fontWeight: 800, color: '#a78bfa', fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '0.35rem' }}>{t.role}</div>
